@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/zeroing.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-pizza">
+      <div class="container">
+        <div class="main-pizza-header">
+          <div class="main-pizza-header__left">
+            <div class="main-pizza-header__logo">
+              <img src="./img/logo-pizza.svg" alt="logo-pizza" />
+            </div>
+            <div class="main-pizza-header__info">
+              <div class="main-pizza-header__info_name">REACT PIZZA</div>
+              <div class="main-pizza-header__info_text">самая вкусная пицца во вселенной</div>
+            </div>
+          </div>
+          <a href="#" class="main-pizza-header__right">
+            <div class="main-pizza-header__price">520 ₽</div>
+            <div class="main-pizza-header__line"></div>
+            <div class="main-pizza-header__count">
+              <img src="./img/payment-header.svg" alt="payment-header" />
+              <p>3</p>
+            </div>
+          </a>
+        </div>
+        <div class="main-pizza__line"></div>
+        <div class="main-pizza-menu">
+          <div class="main-pizza-menu__item">
+            <ul>
+              <li>
+                <a class="main-pizza-menu__item_link_active" href="#">Все</a>
+              </li>
+              <li>
+                <a class="main-pizza-menu__item_link" href="#">Мясные</a>
+              </li>
+              <li>
+                <a class="main-pizza-menu__item_link" href="#">Вегетарианская</a>
+              </li>
+              <li>
+                <a class="main-pizza-menu__item_link" href="#">Гриль</a>
+              </li>
+              <li>
+                <a class="main-pizza-menu__item_link" href="#">Острые</a>
+              </li>
+              <li>
+                <a class="main-pizza-menu__item_link" href="#">Закрытые</a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-pizza-menu__sort">
+            <img class="main-pizza-menu__sort_img" src="./img/sort-img-open.svg" alt="sort-img" />
+            <div class="main-pizza-menu__sort_text">Сортировка по:</div>
+            <div class="main-pizza-menu__sort_by">
+              <a href="#">популярности</a>
+              <p></p>
+            </div>
+            <div class="main-pizza-menu__sort_submenu">
+              <div>
+                <a class="main-pizza-menu__sort_submenu_link_active" href="#">популярности</a>
+              </div>
+              <div>
+                <a class="main-pizza-menu__sort_submenu_link" href="#">по цене</a>
+              </div>
+              <div>
+                <a class="main-pizza-menu__sort_submenu_link" href="#">по алфавиту</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Все пиццы меню -->
+        <div class="main-pizza-all">
+          <div class="main-pizza-all__header">Все пиццы</div>
+          <div class="main-pizza-all__content">
+            <!-- Пицца -->
+            <div class="main-pizza-all__pizza">
+              <div class="main-pizza-all__pizza_img">
+                <img src="./img/chisburger-pizza.png" alt="chisburger-pizza" />
+              </div>
+              <div class="main-pizza-all__pizza_name">Чизбургер-пицца</div>
+              <div class="main-pizza-all__choose">
+                <div class="main-pizza-all__choose_dough">
+                  <button class="main-pizza-all__choose_dough_btn_active">тонкое</button>
+                  <button class="main-pizza-all__choose_dough_btn">традиционное</button>
+                </div>
+                <div class="main-pizza-all__choose_size">
+                  <button class="main-pizza-all__choose_size_btn_active">26 см.</button>
+                  <button class="main-pizza-all__choose_size_btn">30 см.</button>
+                  <button class="main-pizza-all__choose_size_btn">40 см.</button>
+                </div>
+              </div>
+              <div class="main-pizza-all__add">
+                <div class="main-pizza-all__add_price">от 395 ₽</div>
+                <button class="main-pizza-all__add_buy">
+                  <img src="./img/plus-orange.svg" alt="plus-orange" />
+                  <div class="main-pizza-all__add_text">Добавить</div>
+                  <div class="main-pizza-all__add_count">2</div>
+                </button>
+              </div>
+            </div>
+
+            <div class="main-pizza-all__pizza">
+              <div class="main-pizza-all__pizza_img">
+                <img src="./img/suyrnaya-pizza.png" alt="suyrnaya-pizza" />
+              </div>
+              <div class="main-pizza-all__pizza_name">Сырная</div>
+              <div class="main-pizza-all__choose">
+                <div class="main-pizza-all__choose_dough">
+                  <button class="main-pizza-all__choose_dough_btn_active">тонкое</button>
+                  <button class="main-pizza-all__choose_dough_btn">традиционное</button>
+                </div>
+                <div class="main-pizza-all__choose_size">
+                  <button class="main-pizza-all__choose_size_btn_active">26 см.</button>
+                  <button class="main-pizza-all__choose_size_btn">30 см.</button>
+                  <button class="main-pizza-all__choose_size_btn">40 см.</button>
+                </div>
+              </div>
+              <div class="main-pizza-all__add">
+                <div class="main-pizza-all__add_price">от 450 ₽</div>
+                <button class="main-pizza-all__add_buy">
+                  <img src="./img/plus-orange.svg" alt="plus-orange" />
+                  <div class="main-pizza-all__add_text">Добавить</div>
+                </button>
+              </div>
+            </div>
+
+            <div class="main-pizza-all__pizza">
+              <div class="main-pizza-all__pizza_img">
+                <img src="./img/krevetki-po-aziatski-pizza.png" alt="krevetki-po-aziatski-pizza" />
+              </div>
+              <div class="main-pizza-all__pizza_name">Креветки по-азиатски</div>
+              <div class="main-pizza-all__choose">
+                <div class="main-pizza-all__choose_dough">
+                  <button class="main-pizza-all__choose_dough_btn_active">тонкое</button>
+                  <button class="main-pizza-all__choose_dough_btn">традиционное</button>
+                </div>
+                <div class="main-pizza-all__choose_size">
+                  <button class="main-pizza-all__choose_size_btn">26 см.</button>
+                  <button class="main-pizza-all__choose_size_btn_active">30 см.</button>
+                  <button class="main-pizza-all__choose_size_btn">40 см.</button>
+                </div>
+              </div>
+              <div class="main-pizza-all__add">
+                <div class="main-pizza-all__add_price">от 290 ₽</div>
+                <button class="main-pizza-all__add_buy">
+                  <img src="./img/plus-orange.svg" alt="plus-orange" />
+                  <div class="main-pizza-all__add_text">Добавить</div>
+                </button>
+              </div>
+            </div>
+
+            <div class="main-pizza-all__pizza">
+              <div class="main-pizza-all__pizza_img">
+                <img src="./img/syurniy-chicken-pizza.png" alt="syurniy-chicken-pizza" />
+              </div>
+              <div class="main-pizza-all__pizza_name">Сырный цыпленок</div>
+              <div class="main-pizza-all__choose">
+                <div class="main-pizza-all__choose_dough">
+                  <button class="main-pizza-all__choose_dough_btn_active">тонкое</button>
+                  <button class="main-pizza-all__choose_dough_btn">традиционное</button>
+                </div>
+                <div class="main-pizza-all__choose_size">
+                  <button class="main-pizza-all__choose_size_btn_active">26 см.</button>
+                  <button class="main-pizza-all__choose_size_btn">30 см.</button>
+                  <button class="main-pizza-all__choose_size_btn">40 см.</button>
+                </div>
+              </div>
+              <div class="main-pizza-all__add">
+                <div class="main-pizza-all__add_price">от 385 ₽</div>
+                <button class="main-pizza-all__add_buy">
+                  <img src="./img/plus-orange.svg" alt="plus-orange" />
+                  <div class="main-pizza-all__add_text">Добавить</div>
+                </button>
+              </div>
+            </div>
+
+            <div class="main-pizza-all__pizza">
+              <div class="main-pizza-all__pizza_img">
+                <img src="./img/chisburger-pizza.png" alt="chisburger-pizza" />
+              </div>
+              <div class="main-pizza-all__pizza_name">Чизбургер-пицца</div>
+              <div class="main-pizza-all__choose">
+                <div class="main-pizza-all__choose_dough">
+                  <button class="main-pizza-all__choose_dough_btn_active">тонкое</button>
+                  <button class="main-pizza-all__choose_dough_btn">традиционное</button>
+                </div>
+                <div class="main-pizza-all__choose_size">
+                  <button class="main-pizza-all__choose_size_btn_active">26 см.</button>
+                  <button class="main-pizza-all__choose_size_btn">30 см.</button>
+                  <button class="main-pizza-all__choose_size_btn">40 см.</button>
+                </div>
+              </div>
+              <div class="main-pizza-all__add">
+                <div class="main-pizza-all__add_price">от 395 ₽</div>
+                <button class="main-pizza-all__add_buy">
+                  <img src="./img/plus-orange.svg" alt="plus-orange" />
+                  <div class="main-pizza-all__add_text">Добавить</div>
+                </button>
+              </div>
+            </div>
+
+            <div class="main-pizza-all__pizza">
+              <div class="main-pizza-all__pizza_img">
+                <img src="./img/suyrnaya-pizza.png" alt="suyrnaya-pizza" />
+              </div>
+              <div class="main-pizza-all__pizza_name">Сырная</div>
+              <div class="main-pizza-all__choose">
+                <div class="main-pizza-all__choose_dough">
+                  <button class="main-pizza-all__choose_dough_btn_active">тонкое</button>
+                  <button class="main-pizza-all__choose_dough_btn">традиционное</button>
+                </div>
+                <div class="main-pizza-all__choose_size">
+                  <button class="main-pizza-all__choose_size_btn_active">26 см.</button>
+                  <button class="main-pizza-all__choose_size_btn">30 см.</button>
+                  <button class="main-pizza-all__choose_size_btn">40 см.</button>
+                </div>
+              </div>
+              <div class="main-pizza-all__add">
+                <div class="main-pizza-all__add_price">от 450 ₽</div>
+                <button class="main-pizza-all__add_buy">
+                  <img src="./img/plus-orange.svg" alt="plus-orange" />
+                  <div class="main-pizza-all__add_text">Добавить</div>
+                </button>
+              </div>
+            </div>
+
+            <div class="main-pizza-all__pizza">
+              <div class="main-pizza-all__pizza_img">
+                <img src="./img/krevetki-po-aziatski-pizza.png" alt="krevetki-po-aziatski-pizza" />
+              </div>
+              <div class="main-pizza-all__pizza_name">Креветки по-азиатски</div>
+              <div class="main-pizza-all__choose">
+                <div class="main-pizza-all__choose_dough">
+                  <button class="main-pizza-all__choose_dough_btn_active">тонкое</button>
+                  <button class="main-pizza-all__choose_dough_btn">традиционное</button>
+                </div>
+                <div class="main-pizza-all__choose_size">
+                  <button class="main-pizza-all__choose_size_btn">26 см.</button>
+                  <button class="main-pizza-all__choose_size_btn_active">30 см.</button>
+                  <button class="main-pizza-all__choose_size_btn">40 см.</button>
+                </div>
+              </div>
+              <div class="main-pizza-all__add">
+                <div class="main-pizza-all__add_price">от 290 ₽</div>
+                <button class="main-pizza-all__add_buy">
+                  <img src="./img/plus-orange.svg" alt="plus-orange" />
+                  <div class="main-pizza-all__add_text">Добавить</div>
+                </button>
+              </div>
+            </div>
+
+            <div class="main-pizza-all__pizza">
+              <div class="main-pizza-all__pizza_img">
+                <img src="./img/syurniy-chicken-pizza.png" alt="syurniy-chicken-pizza" />
+              </div>
+              <div class="main-pizza-all__pizza_name">Сырный цыпленок</div>
+              <div class="main-pizza-all__choose">
+                <div class="main-pizza-all__choose_dough">
+                  <button class="main-pizza-all__choose_dough_btn_active">тонкое</button>
+                  <button class="main-pizza-all__choose_dough_btn">традиционное</button>
+                </div>
+                <div class="main-pizza-all__choose_size">
+                  <button class="main-pizza-all__choose_size_btn_active">26 см.</button>
+                  <button class="main-pizza-all__choose_size_btn">30 см.</button>
+                  <button class="main-pizza-all__choose_size_btn">40 см.</button>
+                </div>
+              </div>
+              <div class="main-pizza-all__add">
+                <div class="main-pizza-all__add_price">от 385 ₽</div>
+                <button class="main-pizza-all__add_buy">
+                  <img src="./img/plus-orange.svg" alt="plus-orange" />
+                  <div class="main-pizza-all__add_text">Добавить</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
